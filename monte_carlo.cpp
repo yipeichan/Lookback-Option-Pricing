@@ -5,18 +5,19 @@
 #include<new>  //dynamic array
 # include <complex>
 #include <time.h>// random time(null)
+//#include "array.hpp" 
 
 using namespace std;
 //template <typename T> ;
 //T eucall ();
-void genNor()
+template<typename T>
+T genNor()
 {
 	srand(time(NULL)); //random seed
 	double mean =0, std=1;
 	double u, v; //uniform dist
 	double x,y; // normal dist
 	complex<float>value;
-
 	
 	u=rand()/(double)RAND_MAX;
 	v=rand()/(double)RAND_MAX;
@@ -24,8 +25,8 @@ void genNor()
 	y=sqrt(-2*log(u))*sin(2 * M_PI * v) ;
 	
 	value= complex<double> (x,y);
-
-	cout<<value;
+	cout<<value<<endl;
+	//return value;
 }
 
 int main()
