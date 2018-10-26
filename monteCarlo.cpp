@@ -39,9 +39,8 @@ int main()
 	// Create an stockPrice array of n elements initialised to 0
 	cout<<"how many times of simulation would you like to do? (suggest 9999 times)"<<endl;
 	cin>>size;
-    double* stockPrice=new double[size]; //dynamic price simulation array
-
-    double payoff[20];
+    	double* stockPrice=new double[size]; //dynamic price simulation array
+    	double payoff[20];
 
 	srand(13); //random seed
 
