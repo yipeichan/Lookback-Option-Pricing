@@ -1,3 +1,9 @@
+
+/*
+	This program implements the Monte Carlo simulation to price an European put
+	Written by YI-PEI CHAN
+
+*/
 #include<iostream>
 #include<iomanip>
 #include <sstream>
@@ -39,14 +45,15 @@ int main()
 	// Create an stockPrice array of n elements initialised to 0
 	cout<<"how many times of simulation would you like to do? (suggest 9999 times)"<<endl;
 	cin>>size;
-    	double* stockPrice=new double[size]; //dynamic price simulation array
-    	double payoff[20];
+    double* stockPrice=new double[size]; //dynamic price simulation array
+
+    double mean, standardDev,repPayoff;
+    repPayoff=30; //repetition of the numbers of payoff to average
+    double payoff[30];
 
 	srand(13); //random seed
 
 	double  average2=0;
-
-	double mean, standardDev,repPayoff;
 
 	mean = (iRate-yield-sigma*sigma/2)*tOption/n;
 	standardDev=sigma*sqrt(tOption/n);
@@ -54,9 +61,6 @@ int main()
 	// Debug and verification
 	/*cout<<"\nmean="<<mean<<endl
 		<<"standardDev="<<standardDev<<endl;*/
-
-	repPayoff=30; //repetition of the numbers of payoff to average
-
 	
 	for(int j=0; j<repPayoff; j++) 
 	{
