@@ -1,7 +1,7 @@
 
 /*
-	This program implements the Monte Carlo simulation to price an European put
-	Written by YI-PEI CHAN
+	This program implements Monte Carlo simulation to price an European put
+	Written by YI-PEI CHAN on 2016/4/26
 
 */
 #include<iostream>
@@ -40,16 +40,15 @@ int main()
 	n=100;
 
 
-
 	int size;
 	// Create an stockPrice array of n elements initialised to 0
 	cout<<"how many times of simulation would you like to do? (suggest 9999 times)"<<endl;
 	cin>>size;
-    double* stockPrice=new double[size]; //dynamic price simulation array
+    	double* stockPrice=new double[size]; //dynamic price simulation array
 
-    double mean, standardDev,repPayoff;
-    repPayoff=30; //repetition of the numbers of payoff to average
-    double payoff[30];
+    	double mean, standardDev,repPayoff;
+    	repPayoff=30; //repetition of the numbers of payoff to average
+    	double payoff[30];
 
 	srand(13); //random seed
 
@@ -154,7 +153,7 @@ double NormalCDFInverse(double p)
         throw invalid_argument( os.str() );
     }
  
-    if (p < 0.5)
+    else if (p < 0.5)
     {
         // F^-1(p) = - G^-1(p)
         return -RationalApproximation( sqrt(-2.0*log(p)) );
