@@ -1,2 +1,2 @@
 # Option-Pricing
-This is an option pricing program with Monte Carlo Simulation and binomial tree framework
+This repository contains programs to price Lookback Options with Monte Carlo Simulation and binomial tree framework
