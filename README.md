@@ -11,4 +11,4 @@ q : annualized daily compounded dividend yield <br>
 
 ## Instruction
 The payoff function of the lookback put is as follow <br>
-Payofft = max(S<sub>max,t</sub> − S<sub>t</sub>, 0), where S<sub>max,t</sub> = max S<sub>u</sub>, for u = 0, ∆t, 2∆t, ..., t.
+Payoff<sub>t</sub> = max(S<sub>max,t</sub> − S<sub>t</sub>, 0), where S<sub>max,t</sub> = max S<sub>u</sub>, for u = 0, ∆t, 2∆t, ..., t
