@@ -6,7 +6,7 @@ This repository contains programs to price Lookback Options with Monte Carlo Sim
 
 q : annualized daily compounded dividend yield <br>
 
-<small><foot> Reference: lecture notes of the course-- Derivatives Practice (graduate level)  </foot></small>
+<small><foot> Reference: lecture notes of the course-- Financial Computation (graduate level)  </foot></small>
 
 
 ## Instruction
