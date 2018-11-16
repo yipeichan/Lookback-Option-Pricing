@@ -37,11 +37,11 @@ int main()
 	sigma=0.4;
 	tOption=0.25;
 	strikeP=70;
-	n=100;
+	n=300;
 
 
 	int size;
-	// Create an stockPrice array of n elements initialised to 0
+	// Create a stockPrice array of n elements initialised to 0
 	cout<<"how many times of simulation would you like to do? (suggest 9999 times)"<<endl;
 	cin>>size;
     	double* stockPrice=new double[size]; //dynamic price simulation array
