@@ -26,7 +26,7 @@ The payoff function of the lookback put is as follow, <br>
 Payoff<sub>t</sub> = max(S<sub>max,t</sub> − S<sub>t</sub>, 0), where S<sub>max,t</sub> = max S<sub>u</sub>, for u = 0, ∆t, 2∆t, ..., t
 <br>
 The pricing algorithm can be sepreated into process as follows:<br>
-
+<br>
 1. Generate a uniformly distributed random variable between 0 and 1, and compute the value under normal distribution using the inverse cummulative distribution function. The inverse cummulative distribution function can be written in different ways which is often discussed in the course of Numerical Analysis.</div>
 <br>
 <div class="f">
