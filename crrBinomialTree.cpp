@@ -16,10 +16,17 @@ double max(double value1, double value2);
 double sd(double Array[], int n, double mean); //standard deviation
 
 
-static double stockPrice[100][100];
-static double nosmax[100][100];
-static double smax[100][100][100];
-static double calput[100][100][100];
+const int size=100;
+//static
+double stockPrice[size][size];
+double nosmax[size][size];
+double smax[size][size][size];
+double calput[size][size][size];
+
+/* *double res1 = new double stockPrice[size][size];
+*double res2 = new double nosmax[size][size];
+*double res3 = new double smax[size][size][size];
+*double res4 = new double calput[size][size];*/
 
 
 
@@ -44,10 +51,12 @@ int main()
 	strikeP=70;
 
 	int n; // time interval
+	//n=30; 
+	n=size;
 
 	// Create a stockPrice array of n elements initialised to 0
-	cout<<"set number of intervals (suggest 100 times)"<<endl;
-	cin>>n;
+	//cout<<"set number of intervals (suggest 100 times)"<<endl;
+	//cin>>n;
 
 
     /*//static double** stockPrice= new double*[n]; 
@@ -272,7 +281,7 @@ for(int i=n-1; i<-1;i--)
 	}
 }
 
-cout<<"price of the European put = "<<calput[0][0][1];
+cout<<"price of the European put = "<<calput[0][0][1]<<"\n";
 
 
 }
@@ -289,4 +298,3 @@ double max(double value1, double value2)
 	return maximumValue;
 
 }
-
