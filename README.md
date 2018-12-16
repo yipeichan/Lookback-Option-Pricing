@@ -1,5 +1,5 @@
 # Option-Pricing
-<a href="https://yipeichan.github.io"><b>Link for additional explanations</b></a>
+<a href="https://yipeichan.github.io"><b>Link to additional explanations</b></a>
 <br>
 This repository contains programs to price Lookback Options with Monte Carlo Simulation<br>
 
