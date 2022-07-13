@@ -1,6 +1,6 @@
 
 /*
-	This program implements Monte Carlo simulation to price an European put
+	This program implements Monte Carlo simulation to price an European lookback put
 	Written by YI-PEI CHAN on 2016/4/26
 
 */
