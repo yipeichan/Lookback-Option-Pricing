@@ -93,7 +93,7 @@ int main()
 			//cout<<"stockPrice[i]="<<stockPrice[i]<<endl<<endl;
 		}
 		// finding the average of the simulated payoffs
-		payoff[j ]= average1 / size;
+		payoff[j]= average1 / size;
 		if(j % 5 == 0)
 			cout<<"simulated payoff="<<payoff[j]<<endl<<endl;
 		average2=average2+payoff[j];
